@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Somando Valores</title>
+    <style>
+            div#resultado{
+                margin-top: 20px;
+                font: bold 20pt Impact;
+                color: black;
+                width: 200px;
+                height: 200px;
+                line-height: 200px;
+                text-align: center;
+            }
+            input{
+                font: normal 18pt Arial;
+                width: 100px;
+            }
+        </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <!--
+        input = caixa de texto do html!
+    -->
+    <input type="number" name="txtn1" id="txtn1">+
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="somar" onclick="somar()">
+    <center><div id="resultado">Resultado</div></center>
+
+    <script>
+    function somar(){
+        var txt1 = document.getElementById('txtn1');
+        var txt2 = document.getElementById('txtn2');
+        var n1 = Number(txt1.value);
+        var n2 = Number(txt2.value);
+        var soma = n1 + n2;
+        var resultado = document.getElementById('resultado');
+        resultado.style.color = "white";
+        resultado.style.background = "green";
+        resultado.innerText = soma;
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            font: normal 20pt Arial;
+            background: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--//Alguns eventos da div:
+        mouseenter = "quando o mouse entra na div"
+        mousemove = "enquanto o mouse se move dentro da vip"
+        mousedown = "enquanto o mouse esta pressionado"
+        mouseup = "quando o mouse desclica"
+        click = "evento do clique"
+        mouseout = "quando mover o mouse para fora da div"
+    -->
+
+    <!--//Usando evento na div
+        na div usa o (on + o evento="evento()") exemplo onclick=oie()
+    -->
+
+    <!--//Exemplo dos eventos
+        <div id="area" onclick="clicar()" onmouseenter="metendoOMouse()"
+        onmouseout="normal()">--> 
+
+    <div id="area">
+        Interaja...
+    </div>
+
+    <script>
+        var div = document.getElementById('area');
+        //criando evento no Js(melhor!)
+                            //evento,funcao
+        div.addEventListener('click',clicar);
+        div.addEventListener('mouseenter',metendoOMouse);
+        div.addEventListener('mouseout',normal);
+        //função em JS
+        function clicar(){
+            div.innerText = "oie";
+            div.style.background= "red";
+        }
+        function metendoOMouse(){
+            div.innerHTML = "<B>AAAAAI CARALHO</B>";
+            div.style.background = "orange"
+        }
+        function normal(){
+            div.innerText = "Interaja...";
+            div.style.background = "green";
+        }
+    </script>
+</body>
+</html>
