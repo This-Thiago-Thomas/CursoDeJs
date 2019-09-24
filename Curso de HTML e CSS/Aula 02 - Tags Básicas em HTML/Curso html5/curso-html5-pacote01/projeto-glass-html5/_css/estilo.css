@@ -133,18 +133,42 @@ section#corpo {
 table#especificações{
     border: 1px solid #606060;
     border-spacing: 0px;
-    background-color: cyan;
     margin-left: auto;
     margin-right: auto;
 }
 
 table#especificações td{
-    border: 1px solid black;
+    border: 1px solid #606060;
     padding: 10px;
     text-align: center;
     vertical-align: top;
 }
 
+table#especificações td.ce {
+    color: white;
+    background-color: #606060;
+    text-align: right;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+table#especificações td.cd {
+    background-color: #cecece;
+    text-align: left;
+}
+
+table#especificações caption {
+    color: #888888;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+table#especificações span {
+    display: block;
+    float: right;
+    font-size: 8pt;
+    margin-top: 10px;
+}
 aside#lateral {
     display: block;
     width: 535px;
