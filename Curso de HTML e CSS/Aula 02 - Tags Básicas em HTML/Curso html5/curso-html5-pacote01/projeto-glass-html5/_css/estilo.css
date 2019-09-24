@@ -130,6 +130,21 @@ section#corpo {
     padding-right: 10px;
 }
 
+table#especificações{
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    background-color: cyan;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#especificações td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    vertical-align: top;
+}
+
 aside#lateral {
     display: block;
     width: 535px;
