@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <style>
+    body{
+        margin-left: 400px;
+        margin-top: 60px;  
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    input.entrada{
+        width: 300px;
+    }
+
+    input.entrada:hover{
+       background-color: grey;
+    }
+    
+    h1{
+       margin-left: 100px;
+       font-family: Impact;
+       color: blue;
+    }
+    table{
+        background-color: antiquewhite;
+    }
+ 
+    </style>
+</head>
+<body>
+    
+    <h1>Formulário de Cadastro</h1>
+    <form>
+    <table class="tabela">
+    <tr>
+        <td>Nome:</td>
+        <td><input type="text" size=10 name="nome" class="entrada"></td>
+    </tr>
+    <tr>
+        <td>Logradouro:</td>
+        <td><input type="text" size=20 name="logradouro" class="entrada"></td>
+    </tr>
+    <tr>   
+        <td>Cidade:</td>
+        <td><input type="text" size=10 name="Cidade" class="entrada"></td>
+    </tr>
+    <tr>
+            <td>UF:</td>
+            <td><select name="Sexo">
+                    <option value="AC">AL
+                            <option value="AP">AP</option>
+                            <option value="AM">AM</option>
+                            <option value="BA">BA</option>
+                            <option value="CE">CE</option>
+                            <option value="DF">DF</option>
+                            <option value="ES">ES</option>
+                            <option value="GO">GO</option>
+                            <option value="MA">MA</option>
+                            <option value="MT">MT</option> 
+                            <option value="MS">MS</option> 
+                            <option value="MG">MG</option> 
+                            <option value="PA">PA</option> 
+                            <option value="PB">PB</option> 
+                            <option value="PR">PR</option> 
+                            <option value="PE">PE</option> 
+                            <option value="PI">PI</option> 
+                            <option value="RJ">RJ</option>
+                            <option value="RN">RN</option> 
+                            <option value="RS">RS</option> 
+                            <option value="RO">RO</option> 
+                            <option value="RR">RR</option> 
+                            <option value="SC">SC</option> 
+                            <option value="SP">SP</option> 
+                            <option value="SE">SE</option> 
+                            <option value="TO">TO</option>
+                </select></td>
+    </tr>
+    <tr>
+        <td>Sexo:</td>
+        <td><input type="radio" value="1" name="Sexo">Masculino<br>
+            <input type="radio" value="2" name="Sexo">Feminino</td>
+    </tr>
+    <tr>    
+        <td>RG:</td>
+        <td><input type="text" size=8 name="Cidade" class="entrada"></td>
+    </tr>
+    <tr>
+        <td>CPF:</td>
+        <td><input type="text" size=11 name="Cidade" class="entrada"></td>
+    </tr>
+    <tr>
+        <td>Deseja receber email com promoções</td>
+        <td><input type="radio" value="true" name="promocoes">Sim
+            <br>
+        <input type="radio" value="false" name="promocoes">Não</td>
+    </tr>
+    <br>
+    <br>
+   <div class="botoes">
+    <tr>
+        <td><input type="reset" value="limpar" class="entrada"></td>
+        <td><input type="submit" value="enviar" class="entrada"></td>
+    </tr>   
+   </div> 
+    </table>
+    </form>
+    
+</body>
+</html>

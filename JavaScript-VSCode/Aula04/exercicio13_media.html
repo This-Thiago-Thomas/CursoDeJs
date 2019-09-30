@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Média dos números</title>
+</head>
+
+<body>
+    <h1>Programa de Média</h1>
+    <br>
+    Digite um valor:
+    <input type="Number" id="valor1">
+    <br>
+    Digite outro valor:
+    <input type="Number" id="valor2">
+    <br>
+    <input type="button" value="Calcular" class="botao" onClick="calculaMedia()">
+    <input type="reset"  value="limpar" onClick="limpa()">
+    
+    <div id="resp"></div>
+
+    <script>
+        function calculaMedia(){
+            var n1 = Number(document.getElementById('valor1').value);
+            var n2 = Number(document.getElementById('valor2').value);
+            var media = (n1 + n2)/2;
+            var resultado = document.getElementById('resp');
+            resultado.innerText = media;
+        }
+
+        function limpar(){
+            //Implementar!!
+        }
+
+    </script>
+</body>
+
+</html>
