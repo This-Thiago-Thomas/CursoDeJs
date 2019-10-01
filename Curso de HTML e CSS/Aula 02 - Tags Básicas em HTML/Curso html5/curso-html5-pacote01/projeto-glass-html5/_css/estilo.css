@@ -6,6 +6,7 @@
 }
 
 body{
+    font-family: Arial, sans-serif;
     background-color: #dddddd;
     color: rgba(255, 0, 0, 0.5);
 }
@@ -51,6 +52,15 @@ header#cabecalho h2{
 p{
     text-align: justify;
     text-indent: 50px;
+}
+
+a{
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover{
+    color: blue;
 }
 
 /* Formatação de imagens com legendas */
@@ -130,6 +140,40 @@ section#corpo {
     padding-right: 10px;
 }
 
+article#noticia_principal h2{
+    font-size: 13pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 0px;
+    margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.direita{
+    margin-top: 0px;
+    text-align: right;
+}
+
+header#cabecalho-artigo h2{
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+header#cabecalho-artigo h3{
+    font-size: 12px;
+    color: #606060;
+
+}
+
 table#especificações{
     border: 1px solid #606060;
     border-spacing: 0px;
@@ -173,6 +217,21 @@ aside#lateral {
     display: block;
     width: 535px;
     float: right;
+}
+
+aside#lateral h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 35px;
+}
+
+aside#lateral h2{
+    font-size: 13pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 0px;
+    margin: 10px 0px 10px 0px;
 }
 
 footer#rodape {
