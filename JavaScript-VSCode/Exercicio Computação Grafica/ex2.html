@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculo de Salario</title>
+<script type="text/javascript" src="ex2.js"></script>
+</head>
+
+<body>
+    <table border="2">
+        <tr bgcolor='aqua'>
+            <th>CÓDIGO</th>
+            <th>CARGA</th>
+            <th>PERCENTUAL</th>
+        </tr>
+
+        <tr bgcolor='yellow'>
+            <td>1</td>
+            <td>Escrituário</td>
+            <td align="left">50%</td>
+        </tr>
+
+        <tr bgcolor='yellow'>
+            <td>2</td>
+            <td>Secretário</td>
+            <td align="left">35%</td>
+        </tr>
+
+        <tr bgcolor='yellow'>
+            <td>3</td>
+            <td>Caixa</td>
+            <td align="left">20%</td>
+        </tr>
+
+        <tr bgcolor='yellow'>
+            <td>4</td>
+            <td>Gerente</td>
+            <td align="left">10%</td>
+        </tr>
+
+        <tr bgcolor='yellow'>
+            <td>5</td>
+            <td>Diretor</td>
+            <td align="left">Não tem aumento</td>
+        </tr>
+    </table>
+
+    <br/>
+        SELECIONE O CÓDIGO DO CARGO
+        <select name="codigo" id="codigo" size=1>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+         </select>
+         <br/>
+         <br/>
+         DIGITE O VALOR DO SALARIO
+         <br>
+         <input type="text" size=8 name="salario" id="salario">
+         <input type="button" value="calcular" onclick="calcSal()">
+         <br>
+         <br>
+         <div id="resultado"></div>
+
+    
+</body>
+
+</html> 
