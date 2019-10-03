@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8"/>
     <title>Calculadora</title>
+    <script type="text/javascript" src="calculadora.js"></script>
 </head>
 
 <body>
@@ -18,34 +19,32 @@
     <h3>1 OPERANDO</h3>
 
     Valor:
-    <input type="text" name="valor"/>
+    <input type="text" id="valor"/>
 
     <table>
     
         <tr>
-            <td><input type="radio" value="fatorial"/>x! (fatorial de x)</td>
-            <td><input type="radio" value="raiz"/>raiz quadrada (x)</td>
+            <td><input type="radio" name="operacao" value="fatorial"/>x! (fatorial de x)</td>
+            <td><input type="radio" name="operacao" value="raiz"/>raiz quadrada (x)</td>
         </tr>
 
         <tr>
-            <td><input type="radio" value="ao_quad"/>x²</td>
-            <td><input type="radio" value="seno"/>seno (x)</td>
+            <td><input type="radio" name="operacao" value="ao_quad"/>x²</td>
+            <td><input type="radio" name="operacao" value="seno"/>seno (x)</td>
         </tr>
 
         <tr>
-            <td><input type="radio" value="ao_cubo"/>x³</td>
-            <td><input type="radio" value="meio"/>1/x</td>
+            <td><input type="radio" name="operacao" value="ao_cubo"/>x³</td>
+            <td><input type="radio" name="operacao" value="meio"/>1/x</td>
         </tr>
 
     </table>
 
     <h3>Resultado</h3>
-    <input type="text" id="Resultado"/>
+    <input type="text" id="resultado"/>
     <br/>
     <input type="button" value="limpar"/>
-    <input type="button" value="Executar"/>
-
-    
+    <input type="button" value="calcular" onclick="calcularPrincipal()"/>
             
 </body>
 
