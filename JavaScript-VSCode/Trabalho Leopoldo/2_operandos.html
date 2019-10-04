@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>2 Operandos</title>
-
+    <script type="text/javascript" src="calculadora.js"></script>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
 
         <tr>
             <td><input type="text" id="valor1"/></td>
-            <td><select name="Operador">
+            <td><select name="operador" id="operador">
                     <option value="mais">+</option>
                     <option value="menos">-</option>
                     <option value="vezes">*</option>
@@ -39,10 +39,10 @@
     </table>    
 
     <h3>Resultado</h3>
-    <input type="text" id="Resultado"/>
+    <input type="text" id="resultado"/>
     <br/>
-    <input type="button" value="limpar"/>
-    <input type="button" value="Executar"/>
+    <input type="button" value="limpar" onclick="limpaDoisOperandos()"/>
+    <input type="button" value="executar" onclick="calcularDoisOperandos()"/>
 </body>
 
 </html>
