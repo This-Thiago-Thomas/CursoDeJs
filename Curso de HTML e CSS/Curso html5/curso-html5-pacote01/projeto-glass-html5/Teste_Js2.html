@@ -4,20 +4,26 @@
     <title>Teste JS</title>
     <meta charset="utf8"/>
     <script>
-        function acendeLampada(){
-            document.getElementById("lampada").src = "../Aula 02 - Tags Básicas em HTML/Curso html5//curso-html5-pacote01/projeto-glass-html5/_imagens/lampada-acesa.jpg";
-        }
-        function apagaLampada(){
-            document.getElementById("lampada").src = "../Aula 02 - Tags Básicas em HTML/Curso html5//curso-html5-pacote01/projeto-glass-html5/_imagens/lampada-apagada.jpg"
-        }
-        function quebraLampada(){
-            document.getElementById("lampada").src = "../Aula 02 - Tags Básicas em HTML/Curso html5//curso-html5-pacote01/projeto-glass-html5/_imagens/lampada-quebrada.jpg"
+        var quebrada = false;
+        function mudaLampada(a){
+            if(quebrada == false){
+                if(a == 1){
+                    document.getElementById("lampada").src = "_imagens/lampada-acesa.jpg";
+                }
+                if(a == 2){
+                    document.getElementById("lampada").src = "_imagens/lampada-apagada.jpg";
+                }
+                if(a == 3){
+                    document.getElementById("lampada").src = "_imagens/lampada-quebrada.jpg";
+                    quebrada = true;
+                }
+            }
         }
     </script>
 </head>
 <body>
     <h1>Acenda a lâmpada</h1>
-    <img src="../Aula 02 - Tags Básicas em HTML/Curso html5//curso-html5-pacote01/projeto-glass-html5/_imagens/lampada-apagada.jpg" id="lampada" onmouseover="acendeLampada()"
-    onmouseout="apagaLampada()" onclick="quebraLampada()">
+    <img src="_imagens/lampada-apagada.jpg" id="lampada" onmouseover="mudaLampada(1)"
+    onmouseout="mudaLampada(2)" onclick="mudaLampada(3)">
 </body>
 </html>

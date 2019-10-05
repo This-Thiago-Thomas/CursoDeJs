@@ -8,7 +8,7 @@
 body{
     font-family: Arial, sans-serif;
     background-color: #dddddd;
-    color: rgba(255, 0, 0, 0.5);
+    color: black;
 }
 
 div#interface {
@@ -112,7 +112,7 @@ nav#menu ul{
 }
 
 nav#menu li:hover{
-    background-color: #606060;
+    background-color: #450fd8;
 }
 
 nav#menu li{
@@ -129,7 +129,7 @@ nav#menu a{
 }
 
 nav#menu a:hover{
-    color: white;
+    color:white;
 }
 
 section#corpo {
