@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Conversor de Moedas</title>
+    <script type="text/javascript" src="calculadora.js"></script>
 </head>
 
 <body>
@@ -17,32 +18,41 @@
 
     <h3>CONVERSOR DE MOEDAS</h3>
 
+   
     <table>
         <tr>
             <td>Valor:</td>
+            <td>Cotações:</td>
             <td>Dollar($)</td>
-            <td>Euro¢</td>
+            <td>Euro(&euro;)</td>
         </tr>
         <tr>
-            <td><input type="text" id="valor"/></td>
-            <td><input type="text" id="dollar"/></td>
-            <td><input type="text" id="euro"/></td>
+            <td><input type="text" size=8 id="valor"/></td>
+            <td></td>
+            <td><input type="text" size=4 id="cot-dol" value=4.05></td>
+            <td><input type="text" size=4 id="cot-euro" value=4.46></td>
+        </tr>
+    </table>
+    </br>
+    <table>
+        <tr>
+            <td><input type="radio" name="conversao" value="real-dol"/>Real(R$) -> Dollar($)</td>
+            <td><input type="radio" name="conversao" value="dol-real"/>Dollar($) -> Real(R$)</td>
+            <td><input type="radio" name="conversao" value="euro-real"/>Euro(&euro;) -> Real(R$)</td>
         </tr>
         <tr>
-            <td><input type="radio" id="real-dol"/>R$ -> $</td>
-            <td><input type="radio" id="euro-real"/>¢ -> R$</td>
+            <td><input type="radio" name="conversao" value="real-euro"/>Real(R$) -> Euro(&euro;)</td>
+            <td><input type="radio" name="conversao" value="dol-euro"/>Dollar($) -> Euro(&euro;)</td>
+            <td><input type="radio" name="conversao" value="euro-dol"/>Euro(&euro;) -> Dollar($)</td>
         </tr>
-        <tr>
-            <td><input type="radio" id="real-eur"/>R$ -> £</td>
-            <td><input type="radio" id="dol-real"/>$ -> R$</td>
-        </tr>
+
     </table>
 
     <h3>Resultado</h3>
-    <input type="text" id="Resultado"/>
+    <input type="text" id="resultado"/>
     <br/>
     <input type="button" value="limpar"/>
-    <input type="button" value="Executar"/>
+    <input type="button" value="executar" onclick="conversorMoedas()"/>
 
 </body>
 

@@ -1,3 +1,4 @@
+/* Principal */
 function calcularPrincipal(){
 
     let resultado = document.getElementById("resultado");
@@ -46,6 +47,8 @@ function limpaPrincipal(){
     resultado.value = "";
 }
 
+/* 2_operandos */
+
 function calcularDoisOperandos(){
     let n1 = Number(document.getElementById("valor1").value);
     let n2 = Number(document.getElementById("valor2").value);
@@ -73,4 +76,44 @@ function limpaDoisOperandos(){
     n1.value = "";
     n2.value = "";
     resultado.value = "";
+}
+
+/* Conversor Moedas */
+
+function conversorMoedas(){
+
+    let resultado = document.getElementById("resultado");
+    let conversao =  document.getElementsByName("conversao");
+    let valor = Number(document.getElementById("valor").value);
+    let cotacaoDollar = Number(document.getElementById("cot-dol").value);
+    let cotacaoEuro = Number(document.getElementById("cot-euro").value);
+
+    for(let i = 0; i < conversao.length; i++){
+        if(conversao[i].checked){
+            conversao = conversao[i];
+            break;
+        }
+    }
+
+    if(conversao.value == "real-dol"){
+        resultado.value = (valor / cotacaoDollar).toFixed(2);
+
+    }else if(conversao.value == "real-euro"){
+        resultado.value = (valor / cotacaoEuro).toFixed(2);
+
+    }else if(conversao.value == "dol-real"){
+        resultado.value = (valor * cotacaoDollar).toFixed(2);
+
+    }else if(conversao.value == "dol-euro"){
+        resultado.value = (valor * cotacaoDollar / cotacaoEuro).toFixed(2);
+
+    }else if(conversao.value == "euro-real"){   
+        resultado.value = (valor * cotacaoEuro).toFixed(2);
+
+    }else if(conversao.value == "euro-dol"){
+        resultado.value = (valor * cotacaoEuro / cotacaoDollar).toFixed(2)
+
+    }else{
+        alert("Voce precisa selecionar uma função!");
+    }
 }
