@@ -5,10 +5,13 @@
     <meta charset="utf-8" />
     <title>CONVERSOR DE BASES</title>
     <script type="text/javascript" src="calculadora.js"></script>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 
 <body>
     <h1>Calculadora</h1>
+
+    <h3>CONVERSOR DE BASES</h3>
 
     <a href="Principal.html">1 operando</a>
     <a href="2_operandos.html">2 operandos</a>
@@ -16,29 +19,44 @@
     <a href="conversor_bases.html">Conversor de Bases</a>
     <a href="ajuda.html">Ajuda</a>
 
-    <h3>CONVERSOR DE BASES</h3>
+    <br>
+    <br>
+    
 
     <table>
-        <tr>
-            <td><input type="radio" name="bases" value="dec-bin"/>Real(R$) -> Dollar($)</td>
-            <td><input type="radio" name="bases" value="bin-dec"/>Dollar($) -> Real(R$)</td>                   
-            <td><input type="radio" name="bases" value="octal-dec"/>Euro(&euro;) -> Real(R$)</td>
-            <td><input type="radio" name="bases" value="hexa-bin"/>Euro(&euro;) -> Real(R$)</td>
-        </tr>
-        <tr>dec
-            <td><input type="radio" name="bases" value="dec-octal"/>Real(R$) -> Euro(&euro;)</td>
-            <td><input type="radio" name="bases" value="bin-octal"/>Dollar($) -> Euro(&euro;)</td>
-            <td><input type="radio" name="bases" value="octal-bin"/>Euro(&euro;) -> Dollar($)</td>
-            <td><input type="radio" name="bases" value="octal-dec"/>Euro(&euro;) -> Real(R$)</td>
+         <tr>
+            <td>Valor:</td>
         </tr>
         <tr>
-            <td><input type="radio" name="bases" value="dec-hexa"/>Real(R$) -> Euro(&euro;)</td>
-            <td><input type="radio" name="bases" value="bin-hexa"/>Dollar($) -> Euro(&euro;)</td>
-            <td><input type="radio" name="bases" value="octal-hexa"/>Euro(&euro;) -> Dollar($)</td>
-            <td><input type="radio" name="bases" value="octal-dec"/>Euro(&euro;) -> Real(R$)</td>
+            <td><input type="text" size=8 id="valor"/></td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="bases" value="dec-bin"/>Decimal(10) -> Binário(2)</td>
+            <td><input type="radio" name="bases" value="bin-dec"/>Binário(2) -> Decimal(10)</td>                   
+            <td><input type="radio" name="bases" value="octal-bin"/>Octal(8) -> Binário(2)</td>
+            <td><input type="radio" name="bases" value="hexa-bin"/>Hexa-Decimal(16) -> Binário(2)</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="bases" value="dec-octal"/>Decimal(10) -> Octal(8)</td>
+            <td><input type="radio" name="bases" value="bin-octal"/>Binário(2) -> Octal(8)</td>
+            <td><input type="radio" name="bases" value="octal-dec"/>Octal(8) -> Decimal(10)</td>
+            <td><input type="radio" name="bases" value="hexa-dec"/>Hexa-Decimal(16) -> Decimal(10)</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="bases" value="dec-hexa"/>Decimal(10) -> Hexa-Decimal(16)</td>
+            <td><input type="radio" name="bases" value="bin-hexa"/>Binário(2) -> Hexa-Decimal(16)</td>
+            <td><input type="radio" name="bases" value="octal-hexa"/>Octal(8) -> Hexa-Decimal(16)</td>
+            <td><input type="radio" name="bases" value="hexa-octal"/>Hexa-Decimal(16) -> Octal(8)</td>
         </tr>
         
     </table>
+
+    <h2>Resultado</h2>
+    <input type="text" id="resultado"/>
+    <br/>
+    <input type="button" value="limpar" onclick="limpaConversorBases()"/>
+    <input type="button" value="executar" onclick="conversorBases()"/>
+
 
 </body>
 

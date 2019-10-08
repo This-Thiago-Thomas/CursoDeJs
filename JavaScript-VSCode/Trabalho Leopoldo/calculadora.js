@@ -116,4 +116,75 @@ function conversorMoedas(){
     }else{
         alert("Voce precisa selecionar uma função!");
     }
+
+}   
+
+function limpaConversorMoedas(){
+    let valor = document.getElementById("valor");
+    let conversao = document.getElementsByName("conversao");
+    let resultado = document.getElementById("resultado");
+    valor.value = "";
+    resultado.value = "";
+    for(let i = 0; i < conversao.length; i++){
+        conversao[i].checked = false;
+    }
+    
+}
+    
+
+/* Conversor de Bases */
+function conversorBases(){
+    
+    let resultado = document.getElementById("resultado");
+    let bases =  document.getElementsByName("bases");
+    let valor = document.getElementById("valor").value;
+
+        
+    for(let i = 0; i < bases.length; i++){
+        if(bases[i].checked){
+            bases = bases[i];   
+            break;
+        }
+    }
+
+    if(bases.value == "dec-bin"){
+        resultado.value = (Number(valor).toString(2));  
+    }else if(bases.value == "dec-octal"){
+        resultado.value = (Number(valor).toString(8));  
+    }else if(bases.value == "dec-hexa"){
+        resultado.value = (Number(valor).toString(16));   
+    }else if(bases.value == "bin-dec"){
+        resultado.value = parseInt(valor, 2);
+    }else if(bases.value == "bin-octal"){
+        resultado.value = parseInt(valor, 2).toString(8);   
+    }else if(bases.value == "bin-hexa"){
+        resultado.value = parseInt(valor, 2).toString(16);   
+    }else if(bases.value == "octal-bin"){
+        resultado.value = parseInt(valor, 8).toString(2);    
+    }else if(bases.value == "octal-dec"){
+        resultado.value = parseInt(valor, 8);
+    }else if(bases.value == "octal-hexa"){
+        resultado.value = parseInt(valor, 8).toString(16);   
+    }else if(bases.value == "hexa-bin"){
+        resultado.value = parseInt(valor, 16).toString(2);    
+    }else if(bases.value == "hexa-octal"){
+        resultado.value = parseInt(valor, 16).toString(8);    
+    }else if(bases.value == "hexa-dec"){
+        resultado.value = parseInt(valor, 16);   
+    }else{
+        alert("Voce precisa selecionar uma função!");
+    }
+
+}
+
+function limpaConversorBases(){
+    let valor = document.getElementById("valor");
+    let bases = document.getElementsByName("bases");
+    let resultado = document.getElementById("resultado");
+    valor.value = "";
+    resultado.value = "";
+    for(let i = 0; i < bases.length; i++){
+        bases[i].checked = false;
+    }
+    
 }

@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
+
+body{
+    font-family: 'Lucida Sans', sans-serif;
+    background-color: #059ada;
+    color: black;
+    font-family: Manjari, sans-serif;
+}
+
+h1{
+    font-size: 80px;
+}
+
+a {
+    display: inline-block;
+    color: aqua;
+    background-color: black;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+}
+
+p{
+    text-align: justify; 
+}
+
+h3{
+    font-size: 35px;
+    color: aqua;
+    margin-bottom: 5px;
+}
