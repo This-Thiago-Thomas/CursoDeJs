@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>CONVERSOR DE BASES</title>
+    <script type="text/javascript" src="calculadora.js"></script>
 </head>
 
 <body>
@@ -17,7 +18,28 @@
 
     <h3>CONVERSOR DE BASES</h3>
 
-    IMPLEMENTAR...
+    <table>
+        <tr>
+            <td><input type="radio" name="bases" value="dec-bin"/>Real(R$) -> Dollar($)</td>
+            <td><input type="radio" name="bases" value="bin-dec"/>Dollar($) -> Real(R$)</td>                   
+            <td><input type="radio" name="bases" value="octal-dec"/>Euro(&euro;) -> Real(R$)</td>
+            <td><input type="radio" name="bases" value="hexa-bin"/>Euro(&euro;) -> Real(R$)</td>
+        </tr>
+        <tr>dec
+            <td><input type="radio" name="bases" value="dec-octal"/>Real(R$) -> Euro(&euro;)</td>
+            <td><input type="radio" name="bases" value="bin-octal"/>Dollar($) -> Euro(&euro;)</td>
+            <td><input type="radio" name="bases" value="octal-bin"/>Euro(&euro;) -> Dollar($)</td>
+            <td><input type="radio" name="bases" value="octal-dec"/>Euro(&euro;) -> Real(R$)</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="bases" value="dec-hexa"/>Real(R$) -> Euro(&euro;)</td>
+            <td><input type="radio" name="bases" value="bin-hexa"/>Dollar($) -> Euro(&euro;)</td>
+            <td><input type="radio" name="bases" value="octal-hexa"/>Euro(&euro;) -> Dollar($)</td>
+            <td><input type="radio" name="bases" value="octal-dec"/>Euro(&euro;) -> Real(R$)</td>
+        </tr>
+        
+    </table>
+
 </body>
 
 </html>
