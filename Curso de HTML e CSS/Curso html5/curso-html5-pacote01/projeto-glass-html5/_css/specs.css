@@ -6,7 +6,8 @@ section#conteudo {
 }
 
 iframe#frame-spec {
-    width: 380px;
+    padding-left: 60pt;
+    width: 410px;
     height: 280px;
     border: none;
 }
