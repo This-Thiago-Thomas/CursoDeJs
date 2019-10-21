@@ -31,41 +31,63 @@
                  
         </header>
 
-        Fale Conosco > Contato
-        Formulário de Contato
-        por Gustavo Guanabara
-        Atualizado em 01/Maio/2013
-
-        Identificação do Usuário
-            Nome:
-            Senha:
-            E-mail:
-            Sexo:
-                - Masculino
-                - Feminino
-            Data de Nascimento:
-
-        Endereço do Usuário
-            Logradouro:
-            Número:
-            Estado:
-            Cidade:
-
-        Mensagem do Usuário
-            Grau de Urgência:
-            Mensagem:
-
-        Quero um Google Glass
-            Gostaria de adquirir um Google Glass quando disponível
-            Cor:
-            Quantidade:
-            Preço Total: R$
+        <section id="corpo-full">
+                <article id="noticia_principal">
+                    <header id="cabecalho-artigo">
+                        <hgroup>
+                            <h3>Fale Conosco > Contato</h3>
+                            <h1>Formulário de Contato</h1>
+                            <h2>por Thiago Thomas</h2>
+                            <h3 class="direita">Atualizado em 21/Outubro/2019</h3>
+                        </hgroup>
+                    </header>
 
 
-        [BOTÃO ENVIAR]
+                </article>
+            </section>
+            
+            <form>
+                <fieldset id="usuario">
+                    <legend>Identificação do Usuário</legend>
+                        <p>Nome:  <input type="text" name="tNome" id="cNome" size="30" maxlength="50" placeholder="Nome Completo"/></p>
+                        <p>Senha:  <input type="password" name="tSenha" id="cSenha" size="20" maxlength="20" placeholder="Digite a sua Senha"/></p>
+                        <p>E-mail:  <input type="email" name="tMail" id="cMail" size="20" maxlength="40" placeholder="Digite o seu Email"/></p>
+                        <fieldset id="sexo"><legend>Sexo:</legend>
+                            <input type="radio" name="tSexo" id="cMasc"/> <label for="cMasc">Masculino</label><br/>
+                            <input type="radio" name="tSexo" id="cFem"/> <label for="cFem">Feminino</label>
+                        </fieldset>
+                        <p>Data de Nascimento: <input type="date" name="tNasc" id="cNasc"></p>
+
+                </fieldset>
+                    
+                <fieldset id="endereco">
+                    <legend>Endereço do Usuário</legend>
+                        <p>Logradouro: <input type="text" name="tRua" id="cRua" size="20" maxlength="80" placeholder="Rua, Av, Travessa..."/></p>
+                        <p>Número: <input type="number" name="tNum" id="cNum" min="0" max="99999" ></p>
+                        Estado:
+                        Cidade:
+                </fieldset>
+                
+                <fieldset id="mensagem">
+                    <legend>Mensagem do Usuário</legend>
+                        Grau de Urgência:
+                        Mensagem:
+                </fieldset>
+               
+                <fieldset id="pedido">
+                    <legend>Quero um Google Glass</legend>
+                    Gostaria de adquirir um Google Glass quando disponível
+                        Cor:
+                        Quantidade:
+                        Preço Total: R$
+                </fieldset>
+                
+                <input type="button" value="Enviar"/>
+            </form>
+            
 
         <footer id="rodape">
-            <p>Copyright&copy; 2013 - by Gustavo Guanabara <br>
+            <p>Copyright&copy; 2019 - by Thiago Thomas <br>
             <a href="http://facebook.com/" target="_blank">Facebook</a> |
             <a href="http://twitter.com/" target="_blank">Twitter</a> |
             <a href="http://instagram.com/" target="_blank">Instagram</a></p>
