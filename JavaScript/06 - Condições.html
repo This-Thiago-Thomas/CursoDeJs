@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DETRAN</title>
+    <script>
+        function verificaMulta(){
+            var valor = Number(document.getElementById('cMulta').value);
+            if(valor < 70){
+                alert('Você não foi multado, rlx bro');
+            }else{
+                alert('Você foi multado, se fudeu pai!');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <input type="text" id="cMulta" placeholder="Digite a Velocidade"/>
+    <input type="button" id="bCalc" value="Verificar" onclick="verificaMulta()"/>
+</body>
+</html>
