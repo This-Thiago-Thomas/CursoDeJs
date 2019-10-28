@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modelo</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>Ano de Nascimento:
+            <input type="number" id="cAno" name="tAno" size="15">
+            </p>
+            <p>Sexo:
+            <input type="radio" name="tSexo" value="M" id="cMasc"/><label for="cMasc">Masculino</label>
+            <input type="radio" name="tSexo" value="F" id="cFem"/><label for="cFem">Feminino</label>
+            </p>
+            <input type="submit" name="tVerificar" id="cVerificar" value="Verificar" onclick="idadeCerta()"/>
+        </div>
+        <div id="res">
+            <p id="msg">Preencha os dados acima para ver o resultado!</p>
+            <img id="foto">
+        </div>
+    </section>
+    <footer>
+        <p>By Thiago Thomas</p>
+    </footer>
+</body>
+</html>
