@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modelo</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Vamos Contar</h1>
+    </header>
+    <section>
+        <div id="div1">
+            <p><label for="cInicio">Inicio:</label><input id="cInicio" type="number"/></p>
+            <p><label for="cFim">Fim:</label><input id="cFim" type="number"/></p>
+            <p><label for="cPasso">Passo:</label><input id="cPasso" type="number"/></p>
+            <input type="button" value="contar" onclick="contagem()"/>
+        </div>
+        <br>
+        <div id="resultado">
+            Preparando a contagem...
+        </div>
+    </section>
+    <footer>
+        <p>By Thiago Santos</p>
+    </footer>
+</body>
+</html>
