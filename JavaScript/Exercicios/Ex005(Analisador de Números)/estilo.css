@@ -13,13 +13,17 @@ section{
     background: rgb(255,255,255);
     border-radius: 16px;
     padding: 15px;
-    width: 450px;
+    width: 520px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.541);
 }
 
 select {
     width: 200px;
+}
+
+input#num {
+    width: 120px;
 }
 
 footer{

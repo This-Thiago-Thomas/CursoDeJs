@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Analisador Numeros</title>
+    <title>Modelo</title>
     <link rel="stylesheet" href="estilo.css">
     <script src="script.js"></script>
 </head>
@@ -13,28 +13,23 @@
         <h1>Analisador de Números</h1>
     </header>
     <section>
-        <div id="entrada">
-            
-            <p>
-            <label for="numero">Numero (entre 1 e 100):</label>
-            <input id="numero" type="number" size="20"/>
-            <input type="button" value="Adicionar" onclick="adicionar()"/>
-            </p>
+        <div>
+            Número (entre 1 e 100):<input id="numero" type="number"><input type="button" value="Adicionar" onclick="adicionar()">
+            <br>
+            <br>
+            <select id="lista" size="10">
 
-            <p>
-            <select name="tSel" id="cSel" size="10">
             </select>
-            </p>
-
-            <input type="button" value="Finalizar"/>
-        
+            <br>
+            <br>
+            <input type="button" value="finalizar" onclick="finalizar()">
         </div>
-
         <div id="saida">
+            
         </div>
     </section>
     <footer>
-        <p>footer</p>
+        <p>BY THIAGO SANTOS</p>
     </footer>
 </body>
 </html>

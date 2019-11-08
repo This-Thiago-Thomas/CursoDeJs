@@ -10,7 +10,7 @@ function tabuada(){
         while(x<=10){
             var item = document.createElement('option');   //Cria uma TAG
             item.text = `${numero} x ${x} = `+ numero * x;
-            selRes.appendChild(item);                      //Coloca Tag Dentro da parada
+            selRes.appendChild(item);                      //Coloca uma Tag Dentro da Tag
             x++
         }
         //selRes.setAttribute("size","10");                //Coloca mais um atributo na TAG aaah
